@@ -1,2 +1,2 @@
 # Matlab
-Repositorio com scripts da aula de Matlab do professor Ricardo Leiderman no period de 2019.1
+Repositório com scripts da aula de Matlab do professor Ricardo Leiderman no período de 2019.1
