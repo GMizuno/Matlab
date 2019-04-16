@@ -1,2 +1,3 @@
 # Matlab
-Repositório com scripts da aula de Matlab do professor Ricardo Leiderman no período de 2019.1
+Repositório com scripts da aula de Matlab do professor Ricardo Leiderman no período de 2019.1.
+As aulas 1,2,3,4 e 5 foi ensinado os comandos básico do Matlab, já nas aulas seguintes vai ser ensinado a programar no Matlab, usando for, while, if....
