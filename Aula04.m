@@ -6,7 +6,7 @@ y=-20:2:10;
 % z=x.^2+y.^2 isso da errado, vamos usar for
 for ii=1:length(y)
     for jj=1:length(x)
-        z(ii,jj)=x(jj)^2+y(ii)^2;
+        z(ii,jj)=x(jj)^2+y(ii)^2;       
     end
 end
 
@@ -36,8 +36,8 @@ figure(4),pcolor(x2,y2,z2),shading interp
 figure(5),pcolor(x2,y2,z2),shading flat
 
 % % Colocando legenda
-figure(6),pcolor(x2,y2,z2),shading flat  colorbar
-figure(6),pcolor(x2,y2,z2),shading interp  colorbar
+figure(6),pcolor(x2,y2,z2),shading flat, colorbar
+figure(6),pcolor(x2,y2,z2),shading interp, colorbar
 
 % % Criando intervalos de max e min para as colores, ou seja, vamos 
 % % mudar o eixo da escala
