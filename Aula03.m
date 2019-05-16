@@ -6,7 +6,7 @@ x3=[-10:0.25:10];cos3=cos((pi/5).*x3);
 x4=[-10:2:10];cos4=cos((pi/5).*x4);
 
 %Plotando grafico
-plot(x,yreta)
+plot(x,yreta,'-og')
 figure(2),plot(x,yreta,'k') %Mudando onde guarda o grafico default=figure(1)
                             % k muda a cor da linha
 plot(x,yreta,'ko') %ko bota um grafico de boinhas com cor preta
