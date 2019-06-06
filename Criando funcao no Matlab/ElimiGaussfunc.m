@@ -2,16 +2,13 @@
 % % nome da funcao = nome do arquivo
 % % para chamar a funcao [argumentos de saida] = nome da funcao(parametros de entradas) 
 
-function [A, b] = ElimiGaussfunc(MatAvelha,vetBvelho,coluna,numtotcol,numtotlin)
-    for jj=coluna+1:numtotlin
-        m=MatAvelha(jj,coluna)/MatAvelha(coluna,coluna);
-        for kk=coluna:numtotcol
-            MatAvelha(jj,kk)=MatAvelha(jj,kk)-m*MatAvelha(coluna,kk);
-        end
-        vetBvelho(jj)=vetBvelho(jj)-m*vetBvelho(coluna);
+function [A,b] = ElimiGaussfunc(A,b,col,numtotlin,numtotcol)
+for jj=col+1:numtotlin
+    m=A(jj,col)/A(col,col);
+    for kk=col:numtotcol
+        A(jj,kk)=A(jj,kk)-m*A(col,kk);
     end
-   A = MatAvelha;
-   b = vetBvelho;
+    b(jj)=b(jj)-m*b(col);
 end
 
 
