@@ -1,5 +1,5 @@
 # Matlab
-Repositório com scripts das aulas de Matlab, na Universidade Federal Fluminense (UFF), do professor Ricardo Leiderman no período 
+Repositório com scripts das aulas de Matlab, na Universidade Federal Fluminense (UFF), lecionada pelo professor Ricardo Leiderman no período 
 de 2019.1 
 
 <p align="center">
