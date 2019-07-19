@@ -3,8 +3,8 @@
 % integração original em vários subintervalos e aplico a regra do trapézio
 % em cada um deles)
 
-a = 0; b = 1; m = 100;
-funcao = @(x)exp(x);
+a = 0; b = pi/4; m = 10;
+funcao = @(x)sin(x);
 h = (b - a)/m;
 xi = zeros(1, m);
 

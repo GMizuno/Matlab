@@ -26,6 +26,6 @@ v2=ones(N,1)*passo/2; % Aqui eu crio um vetor coluna com todas as entradas iguai
 tic
 vetx1=(a:passo:b-passo).^2;
 vetx2=(a+passo:passo:b).^2;
-v1=vetx1+vetx2;% vetor linha com os termos correspondentes as bases dos trapézios
+v1=vetx1+vetx2; % vetor linha com os termos correspondentes as bases dos trapézios
 soma2=v1*v2;
 toc

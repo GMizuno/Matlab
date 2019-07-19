@@ -1,10 +1,11 @@
 % Este programa realiza a interpolacao de Lagrange para n pontos
-
-x = [-10 -9 4 3 -7 -2 9 10 20 -3 5];
-y = [3 5 -7 8 20 15 -4 0 -9 10 10];
+% x = [-10 -9 4 3 -7 -2 9 10 20 -3 5];
+% y = [3 5 -7 8 20 15 -4 0 -9 10 10];
+x = [3.4, 3.6, 3.8];
+y = [.033,.027, .022];
 n = length(x); L = zeros(1,n); 
 
-xnovo = 10:.1:20;
+xnovo = 3.7
 nx = length(xnovo);
 P = zeros(1,nx);
 
@@ -22,4 +23,4 @@ for kk = 1:nx
     end
 end
 
-figure(1),plot(xnovo, P, '-o', x, y, 'r*'),grid
+% figure(1),plot(xnovo, P, '-o', x, y, 'r*'),grid

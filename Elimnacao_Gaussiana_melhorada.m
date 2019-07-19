@@ -1,5 +1,5 @@
 % % Programa resolve um sistema completo usando eliminacao Gaussiana.
-% % % esse metodo é mais eficaz (no sentido de ter menos contas) q o anterior.
+% % esse metodo é mais eficaz (no sentido de ter menos contas) q o anterior.
 A=[ 1 4 -5 -8 -40 12
     3 -3 45 6 60 -9
     1 2 4 6 9 -4

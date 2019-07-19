@@ -1,9 +1,10 @@
 % Esse programa executa o processo de Gram-Schmidt
 
 %  Preencha as linhas e dps coloque o transpose para deixar tudo em linh
-base = transpose([3, 1
-    2, 2]);
-
+base = transpose([1, 1, 1 
+    -1, 0, 1
+    -1, 1, 0]);
+base
 % S = {v1, v2, ..., vn} sera uma matriz em q cada coluna sera um vetor S
 % e S sera uma base ortogonal
 

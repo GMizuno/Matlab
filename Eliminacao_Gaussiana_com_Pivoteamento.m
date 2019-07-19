@@ -18,6 +18,7 @@ x=zeros(numlin,1);
 soloriginal=A\b;
 
 for ii=1:numcol-1
+% % Achando o Pivo.
     maior = abs(A(ii,ii));
     posicao = ii;
     for jj=ii+1:numlin
@@ -32,6 +33,7 @@ for ii=1:numcol-1
     auxb = b(ii);
     b(ii) = b(posicao);
     b(posicao)=auxb;
+% % Triagularizando a matriz A
     for jj=ii+1:numlin
         m=A(jj,ii)/A(ii,ii) ;
         A(jj,:)=A(jj,:)-m*A(ii,:);

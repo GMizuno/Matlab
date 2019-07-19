@@ -16,7 +16,7 @@ d=epsilon+1;
 d2=epsilon2+1;
 it=0;
 Aaux=A-diag(diag(A));
-%Primeira solução (onde eu faço contas que eu sei que dará 0%%%%%%%%%%%%%%
+%Primeira solução (onde eu faço contas que eu sei que dará 0)%%%%%%%%%%%%%%
 while (d>epsilon && it<nummaxit)||(d2>epsilon2 && it<nummaxit)
     x(:,it+2)=(b-Aaux*x(:,it+1))./diag(A);
     d=max(abs(x(:,it+2)-x(:,it+1)));

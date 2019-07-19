@@ -54,6 +54,7 @@ m(1:2,1)=[pi sin(pi/2)]
 % % % % Mudando as entradas a11=pi e a12=sin(pi)
 m(1,1:2)=[pi sin(pi)]
 % % % Diagonal de uma matriz
+m1=[1:10;11:20;21:30;31:40];
 diagonal=diag(m1)
 % % % Matriz L sem a diagonal
 L=tril(m1,-1)

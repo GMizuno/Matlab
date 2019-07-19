@@ -1,4 +1,3 @@
-
 function fp = newton_interpolation(x,y,p)
 % Script for Newton's Interpolation.
 % Muhammad Rafiullah Arain

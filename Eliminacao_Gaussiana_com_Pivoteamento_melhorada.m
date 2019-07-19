@@ -1,4 +1,4 @@
-% % Esse programa resolve um sistema completo usando o metodo de gauss com
+% Esse programa resolve um sistema completo usando o metodo de gauss com
 % pivotiamento parcial
 
 A=[ 1 4 -5 -8 -40 12
@@ -19,6 +19,7 @@ x=zeros(numlin,1);
 soloriginal=A\b;
 
 for ii=1:numcol-1
+% % Achando o Pivo.
     maior = abs(A(ii,ii));
     posicao = ii;
     for jj=ii+1:numlin
@@ -27,12 +28,15 @@ for ii=1:numcol-1
             posicao=jj;
         end 
     end
+% % Trocando a ordem seguindo o pivo 
     auxA = A(ii,:);
     A(ii,:) = A(posicao,:);
     A(posicao,:)=auxA;
     auxb = b(ii);
     b(ii) = b(posicao);
     b(posicao)=auxb;
+% % Triagularizando a matriz A
+% % Nesse for evita fazer contas do tipo 0-0
     for jj=ii+1:numlin
         m=(A(jj,ii)/A(ii,ii));
         for kk=ii:numcol
@@ -42,3 +46,6 @@ for ii=1:numcol-1
     end 
 end
 
+solfinal = A\b
+
+solfinal - soloriginal

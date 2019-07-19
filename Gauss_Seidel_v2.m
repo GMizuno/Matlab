@@ -14,8 +14,8 @@ epsilon2=1e-6;
 nummaxit=100;
 d=epsilon+1;
 d2=epsilon2+1;
-it=0;
-Matx(:,1)=x;
+it=0; % Numero de iteracoes
+Matx(:,1)=x; % Matriz para guardar as aproximaçoes de x
 while (d>epsilon && it<nummaxit)||(d2>epsilon2 && it<nummaxit)
     x0=x;
     for ii=1:numlin
@@ -32,3 +32,4 @@ while (d>epsilon && it<nummaxit)||(d2>epsilon2 && it<nummaxit)
     it=it+1;
     Matx(:,it+1)=x;
 end
+
